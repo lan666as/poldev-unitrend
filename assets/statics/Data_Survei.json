@@ -1,0 +1,81 @@
+[
+    {
+        "name" : "Pajak",
+        "dashboard" : [
+            {
+                "url" : "https://public.tableau.com/views/Q1Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q2Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q3Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q4Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q5Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q6Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q7Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q8Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q9Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q10Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q11Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q12Tax/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q13Tax/Dashboard1"
+            }
+        ]
+    },
+    {
+        "name" : "Properti",
+        "dashboard" : [
+            {
+                "url" : "https://public.tableau.com/views/Q2Property/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q3Property/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q4Property/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q5Property/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q6Property/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q7Property/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q8Property/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q9Property/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q10Property/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/Q11Property/Dashboard1"
+            }
+        ]
+    }
+]

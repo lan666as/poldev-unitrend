@@ -92,6 +92,9 @@ export default function Navbar() {
               <Link href="/about">About Us</Link>
             </div>
             <div className="mx-5 cursor-pointer hidden md:block">
+              <Link href="/survey">Survey</Link>
+            </div>
+            <div className="mx-5 cursor-pointer hidden md:block">
               <Link href="/economic-development">Economic Development</Link>
             </div>
             <div className="mx-5 cursor-pointer hidden md:block">
