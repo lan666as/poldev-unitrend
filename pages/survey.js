@@ -16,7 +16,7 @@ const Tableau = dynamic(() => import('../components/Tableau'), {
 
 const options = {
   width: 400,
-  height: 800,
+  height: 350,
   hideTabs: true,
   hideToolbar: true,
   debug: false,
