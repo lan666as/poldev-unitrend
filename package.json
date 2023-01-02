@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.2",
     "@heroicons/react": "^2.0.11",
     "@react-spring/parallax": "^9.5.5",
+    "@stoddabr/react-tableau-embed-live": "^0.3.19",
     "@superset-ui/embedded-sdk": "^0.1.0-alpha.7",
     "apexcharts": "^3.35.5",
     "axios": "^1.1.3",

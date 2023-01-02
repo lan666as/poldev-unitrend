@@ -1,5 +1,37 @@
 [
     {
+        "name" : "Pemilu",
+        "dashboard" : [
+            {
+                "url" : "https://public.tableau.com/views/ElectionQ1/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/ElectionQ2/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/ElectionQ3/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/ElectionQ4/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/ElectionQ5/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/ElectionQ6/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/ElectionQ7/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/ElectionQ8/Dashboard1"
+            },
+            {
+                "url" : "https://public.tableau.com/views/ElectionQ9/Dashboard1"
+            }
+        ]
+    },
+    {
         "name" : "Pajak",
         "dashboard" : [
             {

@@ -26,6 +26,9 @@ class MyDocument extends Document {
             src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
             defer
           ></script>
+          {/* <script
+            src="https://public.tableau.com/javascripts/api/viz_v1.js"
+          ></script> */}
           <Main />
           <NextScript />
         </body>
