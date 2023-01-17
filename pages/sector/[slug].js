@@ -93,16 +93,16 @@ function Sector({
           </h1>
 
           <LineCharts
-            trendsData2021={
+            trendsDatalast_year={
               selectedTrendsData &&
               Object.values(
-                selectedTrendsData['biannually_combined_trends_mean']['2021']
+                selectedTrendsData['biannually_combined_trends_mean']['last_year']
               )
             }
-            trendsData2022={
+            trendsDatanow={
               selectedTrendsData &&
               Object.values(
-                selectedTrendsData['biannually_combined_trends_mean']['2022']
+                selectedTrendsData['biannually_combined_trends_mean']['now']
               )
             }
           />
@@ -384,20 +384,23 @@ export async function getStaticProps({ params }) {
   
   const getNextDayDate = (dt) =>
     new Date(dt.getTime() + 1 * 24 * 60 * 60 * 1000);
+  
+  const year_now = new Date().getFullYear();
+  const last_year = year_now-1;
 
   const _latestDate = getDateOfWeek(
-    Object.keys(selectedTrendsData['biannually_combined_trends_mean']['2022'])
+    Object.keys(selectedTrendsData['biannually_combined_trends_mean']['now'])
       .length,
-    2022
+    year_now
   );
   const latestDate = _latestDate.toISOString();
   const latestDateNextDay = getNextDayDate(getNextWeekDate(getNextWeekDate(_latestDate))).toISOString();
   const latestDateNextWeek = getNextDayDate(getNextWeekDate(_latestDate)).toISOString();
   const latestDate2NextWeek = getNextWeekDate(getNextWeekDate(_latestDate)).toISOString();
   const _lastYearDate = getDateOfWeek(
-    Object.keys(selectedTrendsData['biannually_combined_trends_mean']['2022'])
+    Object.keys(selectedTrendsData['biannually_combined_trends_mean']['now'])
       .length,
-    2021
+    last_year
   );
   const lastYearDate = _lastYearDate.toISOString();
   const lastYearDateNextWeek = getNextDayDate(getNextWeekDate(_lastYearDate)).toISOString();

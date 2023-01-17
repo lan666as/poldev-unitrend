@@ -140,12 +140,12 @@ class UnitrendScraper(object):
         # print(df_trends_mean.tail(10))
         # print(df_trends_mean.iloc[-1,:])
         
-        df_trends_mean_2021 = df_trends_mean[-1*(52+week_now):-1*(week_now)]
-        df_trends_mean_2022 = df_trends_mean[-1*(week_now):]
+        df_trends_mean_last_year = df_trends_mean[-1*(52+week_now):-1*(week_now)]
+        df_trends_mean_now = df_trends_mean[-1*(week_now):]
         
         biannually_trends_mean = {
-                "2021" : {int(week):trends_mean for week, trends_mean in zip(df_trends_mean_2021["week"], df_trends_mean_2021["trends_mean"])},
-                "2022" : {int(week):trends_mean for week, trends_mean in zip(df_trends_mean_2022["week"], df_trends_mean_2022["trends_mean"])}
+                "last_year" : {int(week):trends_mean for week, trends_mean in zip(df_trends_mean_last_year["week"], df_trends_mean_last_year["trends_mean"])},
+                "now" : {int(week):trends_mean for week, trends_mean in zip(df_trends_mean_now["week"], df_trends_mean_now["trends_mean"])}
         }
         trends_mean_change = 100.0 * (trends_mean_now-last_year_trends_mean) / (last_year_trends_mean)
         trends_mean_change = trends_mean_now if (np.isnan(trends_mean_change) or np.isinf(trends_mean_change)) else trends_mean_change

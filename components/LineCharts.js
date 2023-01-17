@@ -58,12 +58,12 @@ class LineCharts extends Component {
       },
       series: [
         {
-          name: '2021',
-          data: props.trendsData2021,
+          name: '2022',
+          data: props.trendsDatalast_year,
         },
         {
-          name: '2022',
-          data: props.trendsData2022,
+          name: '2023',
+          data: props.trendsDatanow,
         },
       ],
     };
