@@ -23,7 +23,7 @@ const Tableau = dynamic(() => import('../../components/Tableau'), {
     ssr: false,
   });
 
-function Sector({
+function Survey({
   slug,
   selectedSurveyData
 }) {
@@ -129,4 +129,4 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default Sector;
+export default Survey;
