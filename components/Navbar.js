@@ -3,6 +3,7 @@ import { Transition } from '@headlessui/react';
 import SectorButton from './SectorButton';
 import Link from 'next/link';
 // import LogoPoldev from '../public/logo-poldev.png';
+import smallArrowDown from '../public/small-arrow-down.svg';
 import LogoPoldev from '../public/logo-poldev.png';
 import Image from 'next/future/image';
 import trendsData from '../assets/data/Data_GT.json';
@@ -106,9 +107,11 @@ export default function Navbar() {
             <div className='relative mx-5 cursor-pointer hidden md:block'>
               <button onClick={handleSurveyClick} id="dropdownHoverButton" className="mx-5 cursor-pointer text-center items-center hidden md:inline-flex" type="button">
                 Survey
-                <svg className="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
+                <Image
+                  src={smallArrowDown}
+                  className="h-[1rem] w-[1rem] mx-1"
+                  layout="fill"
+                />
               </button>
               <div id="dropdownHover" className="absolute mt-1 bg-white rounded-lg">
                   {
