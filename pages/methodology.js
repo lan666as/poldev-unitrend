@@ -53,6 +53,8 @@ export default function about() {
             <p className="text-black text-base my-2">
               Proses analisis dilakukan dengan metode penambangan data (scraping) menggunakan kata kunci tertentu yang telah ditentukan.  Metode dalam analisis big data adalah dengan klasifikasi text mining, yang sangat berguna dalam melihat gagasan dan narasi yang terjadi di sosial media, sehingga bisa tergambarkan interaksi apa yang sedang berkembang di masyarakat berdasarkan kata kunci yang diinginkan. Analisis juga menggunakan sentimen dengan pendekatan Lexicon-based approach. Analisis sentimen digunakan untuk memperoleh informasi dengan mengekstrak, memahami, dan mengolah data secara otomatis (Akbari et al., 2017). Lexicon-based approach adalah salah satu pendekatan dalam analisis sentimen dimana analisis akan dilakukan dengan berpedoman pada dataset yang telah diklasifikasikan sebelumnya.
             </p>
+          </section>
+          <section className="my-16 text-justify flex flex-col">
             <h1 className="text-black text-5xl font-bold my-2">
               Metodologi Survei
             </h1>

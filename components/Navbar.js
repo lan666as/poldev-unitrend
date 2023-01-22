@@ -122,7 +122,7 @@ export default function Navbar() {
                             return (
                               <>
                                 <li className="block px-6 py-2 hover:bg-gray-100">
-                                  <Link href={`/survey/${encodeURIComponent(key)}`}>{value.alias}</Link>
+                                  <Link href={`/survey/${encodeURIComponent(key)}`}>{value.name}</Link>
                                 </li>
                               </>
                             )
