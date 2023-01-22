@@ -106,29 +106,29 @@ export default function Navbar() {
             <div className='relative mx-5 cursor-pointer hidden md:block'>
               <button onClick={handleSurveyClick} id="dropdownHoverButton" className="mx-5 cursor-pointer text-center items-center hidden md:inline-flex" type="button">
                 Survey
-                <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div id="dropdownHover" className="absolute mt-1 bg-white rounded-lg">
                   {
                     isSurveyShow && (
-                      <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownHoverButton">
+                      <ul className="py-2 text-sm text-gray-700" aria-labelledby="dropdownHoverButton">
                         {
                           Object.entries(surveyData).map(([key, value]) => {
                             return (
                               <>
-                                <li class="block px-6 py-2 hover:bg-gray-100">
+                                <li className="block px-6 py-2 hover:bg-gray-100">
                                   <Link href={`/survey/${encodeURIComponent(key)}`}>{value.alias}</Link>
                                 </li>
                               </>
                             )
                           })
                         }
-                        {/* <li class="block px-4 py-2 hover:bg-gray-100">
+                        {/* <li className="block px-4 py-2 hover:bg-gray-100">
                           <Link href="/survey">Survey</Link>
                         </li>
-                        <li class="block px-4 py-2 hover:bg-gray-100">
+                        <li className="block px-4 py-2 hover:bg-gray-100">
                           <Link href="/survey">Survey</Link>
                         </li> */}
                       </ul>
