@@ -6,6 +6,7 @@ import Link from 'next/link';
 import LogoPoldev from '../public/logo-poldev.png';
 import Image from 'next/future/image';
 import trendsData from '../assets/data/Data_GT.json';
+import surveyData from '../assets/statics/Data_Survei.json'
 
 export default function Navbar() {
   const useOutsideClick = (callback) => {
@@ -28,6 +29,14 @@ export default function Navbar() {
     return ref;
   };
   const [isShown, setIsShown] = useState(false);
+
+  const [isSurveyShow, setSurveyShown] = useState(false);
+
+  const handleSurveyClick = () => {
+    console.log(isSurveyShow);
+    setSurveyShown(!isSurveyShow);
+  };
+
   const handleClickOutside = () => {
     setIsShown(!isShown);
   };
@@ -91,8 +100,41 @@ export default function Navbar() {
             <div className="mx-5 cursor-pointer hidden md:block">
               <Link href="/about">About Us</Link>
             </div>
-            <div className="mx-5 cursor-pointer hidden md:block">
+            {/* <div className="mx-5 cursor-pointer hidden md:block">
               <Link href="/survey">Survey</Link>
+            </div> */}
+            <div className='relative mx-5 cursor-pointer hidden md:block'>
+              <button onClick={handleSurveyClick} id="dropdownHoverButton" className="mx-5 cursor-pointer text-center items-center hidden md:inline-flex" type="button">
+                Survey
+                <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="dropdownHover" className="absolute mt-1 bg-white rounded-lg">
+                  {
+                    isSurveyShow && (
+                      <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownHoverButton">
+                        {
+                          Object.entries(surveyData).map(([key, value]) => {
+                            return (
+                              <>
+                                <li class="block px-6 py-2 hover:bg-gray-100">
+                                  <Link href={`/survey/${encodeURIComponent(key)}`}>{value.alias}</Link>
+                                </li>
+                              </>
+                            )
+                          })
+                        }
+                        {/* <li class="block px-4 py-2 hover:bg-gray-100">
+                          <Link href="/survey">Survey</Link>
+                        </li>
+                        <li class="block px-4 py-2 hover:bg-gray-100">
+                          <Link href="/survey">Survey</Link>
+                        </li> */}
+                      </ul>
+                    )
+                  }
+              </div>
             </div>
             <div className="mx-5 cursor-pointer hidden md:block">
               <Link href="/economic-development">Economic Development</Link>

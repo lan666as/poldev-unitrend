@@ -83,7 +83,7 @@ export default function Home() {
   const latestDate = _latestDate.toISOString();
   const latestDateNextWeek = getNextWeekDate(_latestDate).toISOString();
   const _lastYearDate = getDateOfWeek(
-    Object.keys(_selectedTrendsData['biannually_combined_trends_mean']['now'])
+    Object.keys(_selectedTrendsData['biannually_combined_trends_mean']['last_year'])
       .length,
     last_year
   );

@@ -1,6 +1,7 @@
-[
-    {
-        "name" : "Pemilu",
+{
+    "pemilu" : {
+        "name" : "Pemilihan Umum 2024",
+        "alias" : "Pemilu",
         "dashboard" : [
             {
                 "url" : "https://public.tableau.com/views/ElectionQ1/Dashboard1"
@@ -31,8 +32,9 @@
             }
         ]
     },
-    {
-        "name" : "Pajak",
+    "pajak" : {
+        "name" : "Keadilan Fiskal dan Perpajakan",
+        "alias" : "Pajak",
         "dashboard" : [
             {
                 "url" : "https://public.tableau.com/views/Q1Tax/Dashboard1"
@@ -72,8 +74,9 @@
             }
         ]
     },
-    {
-        "name" : "Properti",
+    "properti" :{
+        "name" : "Keterjangkauan Harga Properti",
+        "alias" : "Properti",
         "dashboard" : [
             {
                 "url" : "https://public.tableau.com/views/Q2Property/Dashboard1"
@@ -107,4 +110,4 @@
             }
         ]
     }
-]
+}
