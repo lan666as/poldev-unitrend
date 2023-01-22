@@ -38,7 +38,7 @@ function Sector({
     // </div>
     <div className="min-h-screen bg-white">
       <Head>
-        <title>{surveyData[slug]?.name} | UniTrend by PolDev UGM</title>
+        <title>{selectedSurveyData?.name} | UniTrend by PolDev UGM</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className="flex-1">
@@ -53,7 +53,7 @@ function Sector({
           </Link>
           <div>
             <h1 className="text-white text-[4rem] text-center font-bold drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)]">
-                {surveyData[slug]?.name}
+                {selectedSurveyData?.name}
             </h1>
           </div>
           {/* <Image
@@ -68,7 +68,7 @@ function Sector({
         <div className='my-4'>
             <ul className='list-none my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2'>
                 {
-                    surveyData[slug]?.dashboard.map((dashboard, dashboard_index) => {
+                    selectedSurveyData?.dashboard.map((dashboard, dashboard_index) => {
                         return (
                         <>
                             <li key={dashboard_index}>
