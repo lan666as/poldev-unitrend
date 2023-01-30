@@ -274,9 +274,9 @@ export async function getStaticProps({ params }) {
     year_now
   );
   const latestDate = _latestDate.toISOString();
-  const latestDateNextDay = getNextDayDate(getNextWeekDate(getNextWeekDate(_latestDate))).toISOString();
-  const latestDateNextWeek = getNextDayDate(getNextWeekDate(_latestDate)).toISOString();
-  const latestDate2NextWeek = getNextWeekDate(getNextWeekDate(_latestDate)).toISOString();
+  const latestDateNextDay = getNextDayDate(getNextWeekDate(_latestDate)).toISOString();
+  const latestDateNextWeek = getNextDayDate(_latestDate).toISOString();
+  const latestDate2NextWeek = getNextWeekDate(_latestDate).toISOString();
   const _lastYearDate = getDateOfWeek(
     Object.keys(selectedTrendsData['biannually_combined_trends_mean']['now'])
       .length,
