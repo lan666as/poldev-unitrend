@@ -68,7 +68,7 @@ export default function Home() {
     }
     return sunday;
   };
-  const _selectedTrendsData = trendsData[Object.keys(trendsData)[0]];
+  const selectedTrendsData = trendsData[Object.keys(trendsData)[0]];
   const getNextWeekDate = (dt) =>
     new Date(dt.getTime() + 7 * 24 * 60 * 60 * 1000);
 
@@ -76,7 +76,7 @@ export default function Home() {
   const last_year = year_now-1;
 
   const _latestDate = getDateOfWeek(
-    Object.keys(_selectedTrendsData['biannually_combined_trends_mean']['now'])
+    Object.keys(selectedTrendsData['biannually_combined_trends_mean']['now'])
       .length,
     year_now
   );
